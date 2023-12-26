@@ -1,0 +1,20 @@
+<project>
+    <description>My Jenkins Job with Git SCM</description>
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@5.1.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+		    <url>https://github.com/ps895r/inadev-weather.git</url>
+		    <credentialsId>git</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+            <hudson.plugins.git.BranchSpec>
+                <name>*/main</name>
+            </hudson.plugins.git.BranchSpec>
+        </branches>
+        <!-- Other Git SCM configuration options can be added here -->
+    </scm>
+    <!-- Add other job configuration elements here -->
+</project>
+

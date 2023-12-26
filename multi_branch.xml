@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<multibranch-plugin.BranchJobProperty>
+  <project-category/>
+  <project-metadata>
+    <origin class="jenkins.branch.MultiBranchProject">
+      <sources>
+        <data>
+          <jenkins.branch.BranchSource>
+            <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.1.0">
+              <id>inadev-weather-multibranch</id>
+              <remote>https://github.com/ps895r/inadev-weather.git</remote>
+              <credentialsId>git</credentialsId>
+              <traits>
+                <jenkins.plugins.git.traits.BranchDiscoveryTrait>
+                  <strategyId>1</strategyId>
+                </jenkins.plugins.git.traits.BranchDiscoveryTrait>
+                <jenkins.plugins.git.traits.CleanBeforeCheckoutTrait/>
+                <jenkins.plugins.git.traits.LocalBranchTrait>
+                  <strategyId>1</strategyId>
+                </jenkins.plugins.git.traits.LocalBranchTrait>
+                <jenkins.plugins.git.traits.RemoteNameTrait>
+                  <remoteName>origin</remoteName>
+                </jenkins.plugins.git.traits.RemoteNameTrait>
+              </traits>
+            </source>
+          </jenkins.branch.BranchSource>
+        </data>
+      </sources>
+    </origin>
+  </project-metadata>
+</multibranch-plugin.BranchJobProperty>
+
