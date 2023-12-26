@@ -9,7 +9,7 @@ terraform init
 terraform apply -auto-approve
 
 # use service name to filter out the DNS name where Jenkins is located
-aws eks --region us-east-2 update-kubeconfig --name dev10-cluster
+aws eks --region us-east-2 update-kubeconfig --name dev11-cluster
 
 SERVICE_NAME="jenkins"
 ##port="8080"
